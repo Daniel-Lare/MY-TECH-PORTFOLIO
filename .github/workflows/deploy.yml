@@ -27,93 +27,17 @@ jobs:
       - name: Deploy to Azure VM
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.AZURE_VM_PUBLIC_IP }}
+          host: ${{ secrets.20.164.2.157 }}
           username: azureuser
-          key: ${{ secrets.-----BEGIN RSA PRIVATE KEY-----
-MIIG4gIBAAKCAYEArla5ELBquDD7eZUgA2Y0U0i3geT8GVEWB5V7Ty26YH/ZVZv/
-a/SR7SNedisGXQKd+JTUXDhaCtJQprofw5+ym8vzd6qi+6Dk5eGo1ak5VJZcdBHv
-wESNdK7LsYStQ4+KMMlukkFCRqboyFjPioIFu4kK60r3+Tbi6CDERXqbmqWziZ2N
-Qa2kyzxrzNvRkS6cllEXl4xACanptRaCp5AkW/y6msLzCAlcPSeDZsz6NDO7wWqB
-iBl3qxyBE0NwW5B0IGxBdtTrEylgdEUexgHXUUgVwcmk3ciP5L5x+eOuthgI4xCN
-+j6ORpxF5vUuHLtlfA3jcKV/1sVwdn2JG94Btnh4fkmrIIeuwm1hab9OkOF2sCHj
-GqxQcF6t+4c4qfvtjdeBTXI77gPsJuvXwzT+tLqbQJvZGtUTPc9wa8TuhQ/ZeC8Y
-lgm65NTiPHhqRBXgtmO+e7MFumgdTBzUbHxgVh+ZLzaoYkL3kvvajuL1NvcAaDgY
-0BP2q+xjRJ1O9FwdAgMBAAECggGAVI71pjWbHYmMf5Un+N4apQaREyyoZfMhVz5W
-l7nbOzDnjhFi2s699KICEBigNn6tdkNhmPUwHy2RNrzx6SVNMSnEBhe6g4evXhyM
-kk1I5FEluJp2ie/2GFErtQdgLnOxmCYrPj7u0WvlXj9NMqYL98DpjeRH0BWiCurR
-p81nKaQTJ71GJUP+uSCuPKelxuAvzOy6H6RD7yv9kfrAFlvgdslnDOdfj1dS6MqA
-fl0PQkCRYaex+fw4QcNKi7hbB95Q149FQEm/sTXoxxZ7X0t/HXKLOuvRJhD4+AVG
-RtU+JN2qblrzLMKjw9QLrxuFQlKMlDOBjRSQuEg7n03/O3fSmN3qKdSXMmNBBNEk
-903F70Hi3fk1wdF1fHAowszYQnbeuN702QB4Yu3jMemPHWdiFclX/WpVzWpBDy54
-l6oRhwgTquQu9ofGHtJd8TiUSLu+EQaGZfZLlhBO79AVSQusOyzdPqgdJ3EpHxG+
-kzdZabaQcMYzmg5TG3O6fqlgEIYVAoHBAODgB41iHJGe42NAA0HLJ6f8VV8o1oTb
-EK8mcENoYv8mlPC9yIyWglNxsKFzqGtsG4pLLhOWtgIWLJTIDyzoIPo92wN6sA1K
-OG/4wSLh4qbywsZ2mUEWpjH50MRuGO+O3MgIyqRfa2Y+GTIlmxpDrFasZnv39CSC
-xMIPBZZkDJH0YwjJ1EajXfFlj31yogDFJd+0SDUevHlLvLvmNhh0bNEIGUYR36pd
-Wu1Xyj78dFJF7tIuW/k11Yk26DfWyz5S4wKBwQDGeAufkp5alLFLTUOb7rthOAfj
-tgK4jiZk7EDJrV+OzjdLcQQrFCmAueKFPZQ9GxP+ymbR7DdDsig8xBr6SIww5b76
-CpflKWnawvULpAu0hbkXpYIWimdTvzlXPDaIltqrryVI/cyxkZp8Ygq0JjbCHjwO
-/x2nTp9MP0eQ0BG066aaoOer/Hoh5GaBR4kxULkwgrRnxUemFnthgJT+Om/kmUe3
-bQbEVEOQceJyd5N7BT5m1Kc+20DDjo7Zv7QOxP8CgcA65rNTtxUgl2ub/ZJc02ep
-upBqAnpeBjtShVD2dwsnJeXxQOSc3nd4f9jyESdWK9Ty3kpNWzaFSWWX+uburkal
-BTquqJ4gfQZXXeLIzj3d2Mxny3zM7a/Oe07RhL0HUnZF9veNImkxOKbE2dDMillD
-wph9dC8AuTfsVJ70C3S3bjnafXMapYPfzOhOxY3lgb4v4DrhnxFi/BGNbflRYn12
-KxbjoZ7iMt20OUCCSwH04thxOS9iEVXDQRyGM768rl0CgcBRTuLsJ+QKFfqgb/Hv
-0xkfFhZdWra4pzvhgsx0EzwfxCnxFUbw4xyxqPW9QmIVup8xdfgzrkNhz34ejvTC
-brBIZAceZvKdpp7ASbicYUOOXG5c2qh11ZPJQoEaVQe+Y5cIWQO8aIXQhWc15/Cc
-pz8tvbc7KZcbcOFgGliWYjeu2A/0L1FaK2BZvDmmYwk4k+qajiGclbzptTIs2sGv
-eX9XttgjtF3eVusrJQzxej2IW7iZ5iryXF6m/yNU3+3DUz8CgcApYOD189UH8YPh
-lR0UaM7H0YNqnBX7AVYU4zgFe4KQoPevOSnyYnzBF1mNVZbXBNRcINsj+cvbANdc
-VQq9lcOIucKMts1H2e9uo27bQRjGNO9/IbIidWaykcwboe1Z0eynt7ipXtQnUAcq
-K8u/TJTSxj1+ITV/X0vrIcguLrSVyAkVK7Maix3gaL74RwAJuyclUSyXAPsGJou7
-Bi1qLTcnlUfGG2//7OJ74qPCDIBKTiOCQQQ2s+CQhhgVeTn4+gw=
------END RSA PRIVATE KEY----- }}
+          key: ${{ secrets.AZURE_VM_PUBLIC_IP }}
           source: "build/*"
           target: "/var/www/myportfolio"
 
       - name: Restart Nginx
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.AZURE_VM_PUBLIC_IP }}
+          host: ${{ secrets.20.164.2.157 }}
           username: azureuser
-          key: ${{ secrets.-----BEGIN RSA PRIVATE KEY-----
-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
------END RSA PRIVATE KEY----- }}
+          key: ${{ secrets.AZURE_VM_PUBLIC_IP }}
           script: |
             sudo systemctl restart nginx
