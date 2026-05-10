@@ -27,17 +27,17 @@ jobs:
       - name: Deploy to Azure VM
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.20.164.2.157 }}
+          host: ${{ secrets.AZURE_VM_PUBLIC_IP }}
           username: azureuser
-          key: ${{ secrets.AZURE_VM_PUBLIC_IP }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "build/*"
           target: "/var/www/myportfolio"
 
       - name: Restart Nginx
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.20.164.2.157 }}
+          host: ${{ secrets.AZURE_VM_PUBLIC_IP }}
           username: azureuser
-          key: ${{ secrets.AZURE_VM_PUBLIC_IP }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo systemctl restart nginx
